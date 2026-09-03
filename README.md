@@ -6,10 +6,10 @@
     <img src="https://img.shields.io/badge/Portfolio-282C34?style=flat-square&logo=vercel&logoColor=FFFFFF" alt="Portfolio" />
   </a>
   <!-- LinkedIn logo is inlined as a data URI: shields.io/simple-icons no longer ships a "linkedin" slug -->
-  <a href="https://www.linkedin.com/in/le-van-anh-duc-16a713264/" target="_blank">
+  <a href="https://www.linkedin.com/in/levananhduc/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-282C34?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzBBNjZDMiI%2BPHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn" />
   </a>
-  <a href="mailto:levananhduc1804@gmail.com">
+  <a href="mailto:duclevananh.work@gmail.com">
     <img src="https://img.shields.io/badge/Email-282C34?style=flat-square&logo=gmail&logoColor=EA4335" alt="Email" />
   </a>
   <img src="https://komarev.com/ghpvc/?username=LeVanAnhDuc&label=Profile%20views&color=61dafb&style=flat-square" alt="Profile views" />
@@ -21,11 +21,12 @@
 ## 🧑‍💻 About Me
 
 - 🔭 I build **full-stack web products** end to end — from UI to API to database.
-- 🤖 Currently focused on **AI-powered applications**: semantic CV ↔ JD matching, workflow automation, and study tooling.
+- 🧱 Most of my recent work is one ecosystem, **Ducker**: a CMS-driven front door, a shared identity gateway, and the apps behind them.
+- 🤖 Leaning into **AI-powered features**: semantic CV ↔ JD matching, agentic workflow automation, and adaptive study tooling.
 - 🧩 Comfortable across **React / Vue / Next.js** on the front and **NestJS / Express / Go** on the back.
 - 🌱 Currently going deeper into **system design** and **Go**.
 - 💬 Happy to talk about TypeScript, React, NestJS, or anything monorepo-shaped.
-- 📫 Reach me at **levananhduc1804@gmail.com**
+- 📫 Reach me at **duclevananh.work@gmail.com**
 
 <!-- ==================== TECH STACK ==================== -->
 
@@ -98,63 +99,101 @@
 
 ## 🚀 Featured Projects
 
+**Ducker** is the ecosystem most of my recent work belongs to — a CMS-driven front door, a shared identity gateway, and the apps behind them. The status label on each card says what actually runs today.
+
 <!-- Hand-written cards on purpose: the public github-readme-stats "pin" service
      is frequently rate-limited (HTTP 503) and renders as a broken image when it is. -->
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-app-match-cv">🎯 web-app-match-cv</a></h3>
-      <p>Semantic CV ↔ job-description matching. Monorepo: <b>TanStack Start + Ant Design</b> client,
-         <b>NestJS</b> API, <b>PostgreSQL + pgvector</b> through Prisma, plus specs &amp; UI docs.</p>
+    <td colspan="2" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-app-ducker">🚪 Ducker</a></h3>
+      <img src="https://img.shields.io/badge/code%20complete%20--%20not%20deployed-D29922?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>The front door to the ecosystem: a landing page, a directory of every app, a detail page per app, and the docs — all driven by an admin CMS, so public pages change <b>without a redeploy</b>. The navigation tree is content rather than code, and untranslated content is flagged <i>beside each section</i> instead of once per page, because coverage is uneven and a page-level notice would describe most of the page wrongly. 242 unit tests, 16 e2e.</p>
       <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
         <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/NestJS-282C34?logo=nestjs&logoColor=E0234E" height="22" alt="NestJS" />
-        <img src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1" height="22" alt="PostgreSQL" />
         <img src="https://img.shields.io/badge/Prisma-282C34?logo=prisma&logoColor=FFFFFF" height="22" alt="Prisma" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-app-shorten-link">🔗 web-app-shorten-link</a></h3>
-      <p>URL shortener built as a monorepo: <b>Vue</b> client, <b>NestJS</b> server backed by
-         <b>PostgreSQL / Prisma</b>, with the API contract documented alongside the code.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Vue.js-282C34?logo=vuedotjs&logoColor=4FC08D" height="22" alt="Vue.js" />
-        <img src="https://img.shields.io/badge/NestJS-282C34?logo=nestjs&logoColor=E0234E" height="22" alt="NestJS" />
         <img src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1" height="22" alt="PostgreSQL" />
-        <img src="https://img.shields.io/badge/Prisma-282C34?logo=prisma&logoColor=FFFFFF" height="22" alt="Prisma" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-app-ducker-id">🔑 Ducker ID</a></h3>
+      <img src="https://img.shields.io/badge/working%20--%20OIDC%20pending-D29922?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>The identity gateway and app launcher: one account, sign in by <b>password, email OTP or magic link</b>, then a dashboard of the apps you can open. Account lockout with self-service unlock, favourites, login history with device and geo, notifications and a support inbox — plus an admin side for the app registry, accounts and tickets. Monorepo: Next.js client, Express API. 276 server tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/Express-282C34?logo=express&logoColor=FFFFFF" height="22" alt="Express" />
+        <img src="https://img.shields.io/badge/MongoDB-282C34?logo=mongodb&logoColor=47A248" height="22" alt="MongoDB" />
+        <img src="https://img.shields.io/badge/Redis-282C34?logo=redis&logoColor=FF4438" height="22" alt="Redis" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/LeVanAnhDuc/web-app-AI-workflow-automation-platform">⚙️ Ducker Flow Grid</a></h3>
-      <p>Visual workflow automation — draw a graph of nodes and run it by hand, by webhook, or on a cron
-         schedule. Every run is recorded node by node, so it can be replayed and <b>resumed from the node
-         that failed</b> instead of from the start. AI agent nodes call <i>other nodes in the graph</i> as
-         tools. Go API + worker; Postgres doubles as the job queue via <code>FOR UPDATE SKIP LOCKED</code>,
-         so there is no Redis and no external broker.</p>
+      <img src="https://img.shields.io/badge/phases%201--3%20done-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>Visual workflow automation — draw a graph of nodes and run it by hand, by webhook, or on cron. Every run is recorded node by node, so it replays and <b>resumes from the node that failed</b> rather than from the start. AI agent nodes call <i>other nodes in the graph</i> as tools. Postgres doubles as the job queue via <code>FOR UPDATE SKIP LOCKED</code>, so there is no Redis and no external broker.</p>
       <p>
         <img src="https://img.shields.io/badge/Go-282C34?logo=go&logoColor=00ADD8" height="22" alt="Go" />
         <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
-        <img src="https://img.shields.io/badge/React%20Flow-282C34?logo=react&logoColor=61DAFB" height="22" alt="React Flow" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
         <img src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1" height="22" alt="PostgreSQL" />
         <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
       </p>
     </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-app-match-cv">🎯 Match CV</a></h3>
+      <img src="https://img.shields.io/badge/working%20--%20no%20auth%20yet-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>Score a CV against a job description, then act on the result: a hybrid score (60% semantic + 40% keyword — the LLM explains, it never scores), rewrite suggestions that must <b>anchor to a verbatim passage</b> of your CV or be rejected, a grounded cover letter that lists what it refuses to claim, and version-over-version comparison. <b>Bring your own key</b> (OpenRouter / OpenAI / Gemini), stored AES-256-GCM. Unicode-aware tokenizer, so accented Vietnamese is not shredded.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/NestJS-282C34?logo=nestjs&logoColor=E0234E" height="22" alt="NestJS" />
+        <img src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1" height="22" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/Prisma-282C34?logo=prisma&logoColor=FFFFFF" height="22" alt="Prisma" />
+        <img src="https://img.shields.io/badge/Ant%20Design-282C34?logo=antdesign&logoColor=0170FE" height="22" alt="Ant Design" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-app-manage-gym">🏋️ Manage Gym</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>A single-user training log built around the week you actually train: today's screen opens on what you are meant to train plus the meal plan for <i>that kind of day</i>. The rest timer counts to a <b>wall-clock deadline</b> so backgrounding the tab cannot stall it, and a set logged offline queues in localStorage keyed by session/exercise/set, so a re-save replaces instead of duplicating. Day boundaries are Vietnam time, not the server's.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Prisma-282C34?logo=prisma&logoColor=FFFFFF" height="22" alt="Prisma" />
+        <img src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1" height="22" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/LeVanAnhDuc/web-app-AI-study-coach">📚 AI Study Coach</a></h3>
-      <p>A tutor meant to rewrite the study plan from how you actually perform. Infrastructure milestones
-         are done: argon2 + JWT auth with refresh rotation, Next.js used as a <b>BFF</b> so the token never
-         reaches browser JavaScript, and a <b>multi-provider LLM facade</b> over Gemini / Groq / Mistral with
-         fallback routing, a structured-output degrade ladder, a cross-process Redis token bucket, and a
-         usage ledger written in its own transaction. 301 tests. <i>Learning features still in progress.</i></p>
+      <img src="https://img.shields.io/badge/infrastructure%20only-D29922?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>A tutor meant to rewrite the study plan from how you actually perform. The load-bearing layers are built: argon2 + JWT with refresh rotation, Next.js as a <b>BFF</b> so the token never reaches browser JavaScript, and a multi-provider LLM facade over Gemini / Groq / Mistral with fallback routing, a structured-output degrade ladder, a cross-process Redis token bucket and a usage ledger in its own transaction. 301 tests. <i>Learning features not implemented yet.</i></p>
       <p>
         <img src="https://img.shields.io/badge/Python-282C34?logo=python&logoColor=3776AB" height="22" alt="Python" />
         <img src="https://img.shields.io/badge/FastAPI-282C34?logo=fastapi&logoColor=009688" height="22" alt="FastAPI" />
         <img src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1" height="22" alt="PostgreSQL" />
         <img src="https://img.shields.io/badge/Redis-282C34?logo=redis&logoColor=FF4438" height="22" alt="Redis" />
         <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-app-shorten-link">🔗 Shorten Link</a></h3>
+      <img src="https://img.shields.io/badge/scaffold-8B949E?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>Planned as an anonymous URL shortener — paste a URL, get a short link and a QR code — and as the first satellite app to sign in through Ducker ID over OIDC. <i>Currently the two runnable app skeletons plus the Phase 1 spec:</i> the API contract, validation rules and a 13-group e2e scenario matrix are written; the shortener behaviour itself is not built yet.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Vue.js-282C34?logo=vuedotjs&logoColor=4FC08D" height="22" alt="Vue.js" />
+        <img src="https://img.shields.io/badge/NestJS-282C34?logo=nestjs&logoColor=E0234E" height="22" alt="NestJS" />
+        <img src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1" height="22" alt="PostgreSQL" />
+        <img src="https://img.shields.io/badge/Prisma-282C34?logo=prisma&logoColor=FFFFFF" height="22" alt="Prisma" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
       </p>
     </td>
   </tr>
@@ -209,10 +248,10 @@
 ## 🤝 Connect With Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/le-van-anh-duc-16a713264/" target="_blank">
+  <a href="https://www.linkedin.com/in/levananhduc/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-282C34?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzBBNjZDMiI%2BPHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn" height="34" />
   </a>
-  <a href="mailto:levananhduc1804@gmail.com">
+  <a href="mailto:duclevananh.work@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-282C34?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Gmail" height="34" />
   </a>
   <a href="https://www.facebook.com/qb.levananhduc" target="_blank">
