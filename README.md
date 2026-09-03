@@ -97,7 +97,7 @@
 
 <!-- ==================== PROJECTS ==================== -->
 
-## 🚀 Featured Projects
+## 🪐 Ducker Ecosystem
 
 **Ducker** is the ecosystem most of my recent work belongs to — a CMS-driven front door, a shared identity gateway, and the apps behind them. The status label on each card says what actually runs today.
 
@@ -199,15 +199,95 @@
   </tr>
 </table>
 
-### 🌐 Live demos
+## 🧪 Other Projects
 
-| Project | Stack | Live |
-| :-- | :-- | :-- |
-| [DuckShop — storefront](https://github.com/LeVanAnhDuc/fe-user-TLCN) | React · TypeScript | [Open ↗](https://fe-user-tlcn-duckshop.vercel.app) |
-| [DuckShop — admin](https://github.com/LeVanAnhDuc/fe-admin-TLCN) | React · TypeScript | [Open ↗](https://fe-admin-tlcn.vercel.app) |
-| [Personal Portfolio v2](https://github.com/LeVanAnhDuc/personal-portfolio_v2) | TypeScript | [Open ↗](https://personal-portfolio-v2-nine.vercel.app) |
-| [Todo App Pro](https://github.com/LeVanAnhDuc/todoApp-Pro-NextJS) | Next.js · TypeScript | [Open ↗](https://todo-app-pro-next-js.vercel.app) |
-| [Badminton Calculator](https://github.com/LeVanAnhDuc/app-calculate-badminton) | TypeScript | [Open ↗](https://levananhduc.github.io/app-calculate-badminton/) |
+<table>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/app-calculate-badminton">🏸 Badminton Cost Split</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/app-calculate-badminton/"><img src="https://img.shields.io/badge/Live%20demo-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Live demo" /></a>
+      <p>Works out what each member of a badminton group owes after a session — split by gender weight, or charge the court by each person's actual playing time. Shared extra costs stay whole when a player is removed, every destructive action is a 6-second <b>Undo</b> rather than a confirm dialog, and each player gets a <b>VietQR code</b> with the amount and transfer note already filled in. Vietnamese names sort by their unaccented letter and search ignores accents (“duc” finds “Đức”). Installable, fully offline, no server — everything lives in localStorage. 441 tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Vite-282C34?logo=vite&logoColor=646CFF" height="22" alt="Vite" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/personal-portfolio_v2">👤 Personal Portfolio v2</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://personal-portfolio-v2-nine.vercel.app"><img src="https://img.shields.io/badge/Live%20demo-1F6FEB?style=flat-square&logo=vercel&logoColor=white&labelColor=282C34" height="20" alt="Live demo" /></a>
+      <p>My personal site, written during an internship at app-cyclone. Built as a practice ground for i18next internationalisation, Redux Toolkit with TypeScript, and form validation with react-hook-form + Yup.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Ant%20Design-282C34?logo=antdesign&logoColor=0170FE" height="22" alt="Ant Design" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+        <img src="https://img.shields.io/badge/Redux-282C34?logo=redux&logoColor=764ABC" height="22" alt="Redux" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/game-flappy-bird">🐦 Flappy Bird</a></h3>
+      <img src="https://img.shields.io/badge/scaffold-8B949E?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>A Next.js + TypeScript project set up to build a Flappy Bird clone, with Tailwind, shadcn/ui, ESLint, Prettier and Husky already wired in. <i>Only the scaffold exists so far — the game itself is not written yet.</i></p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+## 🎓 University & Internship
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/fe-user-TLCN">🛒 DuckShop — e-commerce (TLCN)</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://fe-user-tlcn-duckshop.vercel.app"><img src="https://img.shields.io/badge/Storefront-1F6FEB?style=flat-square&logo=vercel&logoColor=white&labelColor=282C34" height="20" alt="Storefront" /></a>
+      <a href="https://fe-admin-tlcn.vercel.app"><img src="https://img.shields.io/badge/Admin-1F6FEB?style=flat-square&logo=vercel&logoColor=white&labelColor=282C34" height="20" alt="Admin" /></a>
+      <p>University specialised-project (TLCN): a full storefront — catalogue, product detail, cart, checkout, order tracking, profile, and sign-in with <b>OTP</b> plus password recovery — alongside an <a href="https://github.com/LeVanAnhDuc/fe-admin-TLCN">admin panel</a> for products, categories, orders, customers and revenue statistics.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Vite-282C34?logo=vite&logoColor=646CFF" height="22" alt="Vite" />
+        <img src="https://img.shields.io/badge/MUI-282C34?logo=mui&logoColor=007FFF" height="22" alt="MUI" />
+        <img src="https://img.shields.io/badge/Redux-282C34?logo=redux&logoColor=764ABC" height="22" alt="Redux" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/fe-stellar">🏨 Stellar — hotel booking</a></h3>
+      <img src="https://img.shields.io/badge/no%20demo%20deployed-8B949E?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <p>A hotel booking site: browse rooms and prices, make a reservation, manage your own bookings, pay, and read the conference, restaurant and amenity pages. The <a href="https://github.com/LeVanAnhDuc/fe-stellar-admin">admin side</a> manages rooms, room types, bookings, guests and the transaction history.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/JavaScript-282C34?logo=javascript&logoColor=F7DF1E" height="22" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/Redux-282C34?logo=redux&logoColor=764ABC" height="22" alt="Redux" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/eCom-intern-2">📦 LEDUC E-commerce</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://e-com-intern-2.vercel.app"><img src="https://img.shields.io/badge/Live%20demo-1F6FEB?style=flat-square&logo=vercel&logoColor=white&labelColor=282C34" height="20" alt="Live demo" /></a>
+      <p>Built during an internship at app-cyclone, and the only one of these that is <b>full-stack</b>: a NestJS API running in Docker behind both a user and an admin front end. Covers the real e-commerce flow — cart, checkout, wishlist, reviews, product CRUD with image upload, filtering and search — plus dark mode, i18n and Framer Motion transitions.</p>
+      <p>
+        <img src="https://img.shields.io/badge/NestJS-282C34?logo=nestjs&logoColor=E0234E" height="22" alt="NestJS" />
+        <img src="https://img.shields.io/badge/Docker-282C34?logo=docker&logoColor=2496ED" height="22" alt="Docker" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/MUI-282C34?logo=mui&logoColor=007FFF" height="22" alt="MUI" />
+      </p>
+    </td>
+  </tr>
+</table>
 
 <!-- ==================== STATS ==================== -->
 
