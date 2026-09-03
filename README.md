@@ -260,7 +260,7 @@
   <a href="https://www.youtube.com/channel/UC5_2Ae0w0gtekPAR5rPqSUQ" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-282C34?style=for-the-badge&logo=youtube&logoColor=FF0000" alt="YouTube" height="34" />
   </a>
-  <a href="https://www.instagram.com/hi.iam.lvad/" target="_blank">
+  <a href="https://www.instagram.com/hi.iam.leduk/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-282C34?style=for-the-badge&logo=instagram&logoColor=E4405F" alt="Instagram" height="34" />
   </a>
 </p>
