@@ -199,15 +199,74 @@
   </tr>
 </table>
 
+## 🎮 Games
+
+Browser games, no server and no sign-in — each one static-exported and deployed to GitHub Pages by Actions, with releases versioned from Conventional Commit prefixes.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-tetris">🧩 Tetris</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-tetris/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Tetris on the modern Guideline — SRS rotation with wall kicks, 7-bag randomiser, hold, ghost piece, lock delay with a capped move reset, T-spin, combo and back-to-back scoring. The rules live in a <b>pure deterministic engine</b> with no DOM, clock or <code>Math.random</code>, tested against the published kick tables rather than against how it looks on screen: a whole game is a seed plus the commands and the ticks they arrived on, which is what makes replays reproducible. EN/VI, auto-pauses on tab blur.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Vite-282C34?logo=vite&logoColor=646CFF" height="22" alt="Vite" />
+        <img src="https://img.shields.io/badge/GitHub%20Actions-282C34?logo=githubactions&logoColor=2088FF" height="22" alt="GitHub Actions" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-flappy-bird">🐦 Flappy Bird</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-flappy-bird/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Every sprite and every sound generated at runtime — the project ships <b>no image or audio file at all</b>: parallax sky drawn on canvas, effects synthesised with WebAudio oscillators. Physics runs on a fixed 1/120s step so a 60Hz laptop and a 144Hz monitor behave alike, and the hitbox is smaller than the bird you see so a near miss reads as “just made it”. Three difficulties with separate record tables. 78 unit + 17 e2e tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-minesweeper">💣 Minesweeper</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-minesweeper/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>The original rules kept exactly: the first click is always safe and always opens a region, chording explodes on a misplaced flag, and the mine counter goes negative rather than stopping at zero. The eight numerals run as a heat ramp and <b>every one clears 4.5:1 contrast in both themes — asserted by the test suite on every run</b>, with shape, not lightness, separating open cells from closed. Fully keyboard-playable; <code>?seed=</code> shares an exact board.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-gomoku">⭕ Caro Vô Hạn (Gomoku)</a></h3>
+      <img src="https://img.shields.io/badge/playable%20--%20AI%20is%20a%20stopgap-D29922?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-gomoku/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Vietnamese caro against the machine on a board with <b>no edges</b> — coordinates are integers and go negative, so “blocked” means an enemy mark and never a wall. Five or more wins unless both ends are blocked; there is no draw, because an unbounded board never runs out of cells. Drawn procedurally on canvas as pen strokes on graph paper, so shape carries the meaning and a greyscale screenshot still reads. 89 unit tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+</table>
+
 ## 🧪 Other Projects
 
 <table>
   <tr>
-    <td colspan="2" valign="top">
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/LeVanAnhDuc/app-calculate-badminton">🏸 Badminton Cost Split</a></h3>
       <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
       <a href="https://levananhduc.github.io/app-calculate-badminton/"><img src="https://img.shields.io/badge/Live%20demo-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Live demo" /></a>
-      <p>Works out what each member of a badminton group owes after a session — split by gender weight, or charge the court by each person's actual playing time. Shared extra costs stay whole when a player is removed, every destructive action is a 6-second <b>Undo</b> rather than a confirm dialog, and each player gets a <b>VietQR code</b> with the amount and transfer note already filled in. Vietnamese names sort by their unaccented letter and search ignores accents (“duc” finds “Đức”). Installable, fully offline, no server — everything lives in localStorage. 441 tests.</p>
+      <p>Works out what each member of a badminton group owes after a session — split by gender weight, or charge the court by each person's actual playing time. Shared extra costs stay whole when a player is removed, every destructive action is a 6-second <b>Undo</b> rather than a confirm dialog, and each player gets a <b>VietQR code</b> with the amount and transfer note already filled in. Vietnamese names sort by their unaccented letter and search ignores accents (“duc” finds “Đức”). Installable, fully offline, no server. 441 tests.</p>
       <p>
         <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
         <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
@@ -215,8 +274,6 @@
         <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/LeVanAnhDuc/personal-portfolio_v2">👤 Personal Portfolio v2</a></h3>
       <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
@@ -228,16 +285,6 @@
         <img src="https://img.shields.io/badge/Ant%20Design-282C34?logo=antdesign&logoColor=0170FE" height="22" alt="Ant Design" />
         <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
         <img src="https://img.shields.io/badge/Redux-282C34?logo=redux&logoColor=764ABC" height="22" alt="Redux" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/game-flappy-bird">🐦 Flappy Bird</a></h3>
-      <img src="https://img.shields.io/badge/scaffold-8B949E?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <p>A Next.js + TypeScript project set up to build a Flappy Bird clone, with Tailwind, shadcn/ui, ESLint, Prettier and Husky already wired in. <i>Only the scaffold exists so far — the game itself is not written yet.</i></p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
-        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
       </p>
     </td>
   </tr>
