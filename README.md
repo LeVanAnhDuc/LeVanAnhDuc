@@ -256,6 +256,58 @@ Browser games, no server and no sign-in — each one static-exported and deploye
       </p>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-sokoban">📦 Sokoban</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-sokoban/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p><b>No level in this game was drawn by hand.</b> A generator assembles each one, then a solver has to find the optimal solution before the level is allowed to exist — which is also where the number on the HUD comes from, so you always know how few pushes the level can be done in. The solver searches <i>push</i> space and collapses every player position inside one reachable region into a single state; without that collapse the same crate arrangement expands dozens of times and the search runs out of budget. Push a crate into a corner it can never leave and a strip offers the undo — a strip and not a dialog, because a dialog would cover the button you are reaching for.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-asteroids">🪨 Asteroids</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-asteroids/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>The 1979 flight model kept whole — rotation, inertial thrust, friction and screen wrap on a fixed 1600×1200 world — with endless waves, two UFO types from wave 3, and five power-ups where the three weapons share one slot. The rules are pure functions behind a single <code>step(state, input, dt)</code> at a fixed 60 steps per second, and <b>an ESLint override forbids the engine from reaching <code>Math.random</code>, <code>Date.now</code> or <code>window</code></b>: one stray call silently ends determinism and resurfaces months later as a flaky test. Real hold-to-act touch controls, not a keyboard emulator. 151 unit tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-match-3">💎 Match 3</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-match-3/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Six levels that teach the rules in order, with special pieces earned by <i>how</i> you matched: four in a row clears a line, an L or T spawns a 3×3 bomb, five spawns a colour bomb. One player move goes through one pure function that returns the settled board plus an ordered list of events, and the UI only replays them — a boundary <b>enforced by a test that greps the engine source</b> rather than by convention, plus one that plays 4320 pseudo-random moves and asserts the replay reproduces the engine's own session exactly. Deadlock reshuffles for free, fully keyboard playable, and every colour also carries a shape. 517 tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-solitaire">🃏 Klondike Solitaire</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-solitaire/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Klondike with a draw-1 / draw-3 toggle, unlimited undo back to the first move, and a board that animates — cards fly between piles and a new game deals out from the deck. <b>A game is stored as a seed plus the list of moves played</b>, and the current position is that list replayed from the deal, which is what makes undo, restart and deterministic tests the same mechanism; <code>?van=&lt;number&gt;</code> reopens a deal you liked. Tapping, dragging and the keyboard are all first-class — none of them is the poor relation. 246 tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
 </table>
 
 ## 🧪 Other Projects
