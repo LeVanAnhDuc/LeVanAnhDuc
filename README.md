@@ -54,6 +54,17 @@
     </td>
   </tr>
   <tr>
+    <td><b>Game dev</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Three.js-282C34?logo=threedotjs&logoColor=FFFFFF" alt="Three.js" title="Three.js" height="26" />
+      <img src="https://img.shields.io/badge/Phaser-282C34" alt="Phaser" title="Phaser" height="26" />
+      <img src="https://img.shields.io/badge/Canvas%202D-282C34" alt="Canvas 2D" title="Canvas 2D" height="26" />
+      <img src="https://img.shields.io/badge/WebAudio-282C34" alt="WebAudio" title="WebAudio" height="26" />
+      <img src="https://img.shields.io/badge/Vitest-282C34?logo=vitest&logoColor=6E9F18" alt="Vitest" title="Vitest" height="26" />
+      <img src="https://img.shields.io/badge/Playwright-282C34" alt="Playwright" title="Playwright" height="26" />
+    </td>
+  </tr>
+  <tr>
     <td><b>Styling &amp; UI</b></td>
     <td>
       <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" title="Tailwind CSS" height="26" />
@@ -201,14 +212,78 @@
 
 ## 🎮 Games
 
-Browser games, no server and no sign-in — each one static-exported and deployed to GitHub Pages by Actions, with releases versioned from Conventional Commit prefixes.
+Eleven browser games under one **Duck** name — no server, no sign-in, nothing leaves the browser. Each is static-exported and deployed to GitHub Pages by Actions, with releases versioned from Conventional Commit prefixes. The pattern they share: every rule lives in a pure, deterministic core that cannot reach the DOM, the clock or <code>Math.random</code> — a boundary enforced by lint or by a CI grep, not by convention — so the whole rule set runs headless in Node and a replay reproduces a session exactly.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-tetris">🧩 Tetris</a></h3>
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-runner">🌿 Duck Runner</a></h3>
       <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-tetris/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <a href="https://levananhduc.github.io/web-game-duck-runner/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>A three-lane endless runner over a jungle chasm. One rule decides every visual: <b>anything you must read in a fraction of a second has a dark body and a bright edge</b>, so danger is encoded by brightness rather than hue and survives every kind of colour blindness — a test measures all thirteen pairs on every push. It replaced an earlier rule under which obstacles hit 1.16:1 against the near road, invisible in the last second before impact, which no rule test could catch because the rules were correct. Obstacle clusters are hand-written data that a solver must prove clearable at both speed extremes, and spacing is reaction time × speed so your reaction window stays constant as it gets faster.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Three.js-282C34?logo=threedotjs&logoColor=FFFFFF" height="22" alt="Three.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Vite-282C34?logo=vite&logoColor=646CFF" height="22" alt="Vite" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-defense">🛡️ Duck Defense</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-defense/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Tower defense across five hand-built maps, five tower lines and a four-branch upgrade tree. The simulation is pure TypeScript with no browser dependency, so a full 12-wave battle runs headless in under 200ms — which is what makes the balance a <b>test rather than a hope</b>: every map must be winnable with no upgrades at all, proved by a simulated player that may only spend the gold it actually earns. That player caught the tutorial map losing at wave 7. Speed x2/x3 runs more ticks instead of scaling <code>dt</code>, so the outcome is identical at any frame rate. 231 unit + 22 browser tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Phaser-282C34" height="22" alt="Phaser" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Vite-282C34?logo=vite&logoColor=646CFF" height="22" alt="Vite" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-caro">⭕ Duck Caro</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-caro/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Vietnamese caro on a board with <b>no edges</b> — coordinates are integers and go negative, so “blocked” means an enemy mark and never a wall, and there is no draw. The opponent is real: minimax with alpha-beta in a Web Worker, evaluated on <i>open ends</i> rather than run length, and Easy is weakened by occasionally not seeing your threat at all, because a shallower search still blocks perfectly and would never feel easy. The win rule is frozen per game and saved with it, so reopening a game months later judges it by the rule it was played under. Hot-seat two-player, full keyboard play, move-by-move replay. 317 unit + 27 e2e tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-match">💎 Duck Match</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-match/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Match-3 over six levels that teach the rules in order, with special pieces earned by <i>how</i> you matched: four in a row clears a line, an L or T spawns a 3×3 bomb, five spawns a colour bomb. One player move goes through one pure function returning the settled board plus an ordered event list, and the UI only replays them — a boundary <b>enforced by a test that greps the engine source</b>, plus one that plays 4320 pseudo-random moves and asserts the replay reproduces the engine's own session exactly. The board never deadlocks, every colour also carries a shape. 517 tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-drift">🪨 Duck Drift</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-drift/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>The 1979 Asteroids flight model kept whole — rotation, inertial thrust, friction and screen wrap on a fixed 1600×1200 world — with endless waves, two UFO types from wave 3, and five power-ups where the three weapons share one slot. The rules are pure functions behind a single <code>step(state, input, dt)</code> at a fixed 60 steps per second, and <b>an ESLint override forbids the engine from reaching <code>Math.random</code>, <code>Date.now</code> or <code>window</code></b>: one stray call silently ends determinism and resurfaces months later as a flaky test. 151 unit tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-stack">🧩 Duck Stack</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-stack/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
       <p>Tetris on the modern Guideline — SRS rotation with wall kicks, 7-bag randomiser, hold, ghost piece, lock delay with a capped move reset, T-spin, combo and back-to-back scoring. The rules live in a <b>pure deterministic engine</b> with no DOM, clock or <code>Math.random</code>, tested against the published kick tables rather than against how it looks on screen: a whole game is a seed plus the commands and the ticks they arrived on, which is what makes replays reproducible. EN/VI, auto-pauses on tab blur.</p>
       <p>
         <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
@@ -217,10 +292,50 @@ Browser games, no server and no sign-in — each one static-exported and deploye
         <img src="https://img.shields.io/badge/GitHub%20Actions-282C34?logo=githubactions&logoColor=2088FF" height="22" alt="GitHub Actions" />
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-flappy-bird">🐦 Flappy Bird</a></h3>
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-solitaire">🃏 Duck Solitaire</a></h3>
       <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-flappy-bird/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <a href="https://levananhduc.github.io/web-game-duck-solitaire/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Klondike with a draw-1 / draw-3 toggle, unlimited undo back to the first move, and a board that animates. <b>A game is stored as a seed plus the list of moves played</b>, and the current position is that list replayed from the deal — which is what makes undo, restart and deterministic tests the same mechanism; <code>?van=&lt;number&gt;</code> reopens a deal you liked. Tapping, dragging and the keyboard are all first-class, none of them the poor relation. 246 tests.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-push">📦 Duck Push</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-push/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p><b>No level in this game was drawn by hand.</b> A generator assembles each one, then a solver has to find the optimal solution before the level is allowed to exist — which is also where the number on the HUD comes from, so you always know how few pushes it can be done in. The solver searches <i>push</i> space and collapses every player position inside one reachable region into a single state; without that collapse the same crate arrangement expands dozens of times and the search runs out of budget. Push a crate into a dead corner and a strip offers the undo — a strip, not a dialog, which would cover the button you are reaching for.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-mines">💣 Duck Mines</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-mines/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>Minesweeper's original rules kept exactly: the first click is always safe and always opens a region, chording explodes on a misplaced flag, and the mine counter goes negative rather than stopping at zero. The eight numerals run as a heat ramp and <b>every one clears 4.5:1 contrast in both themes — asserted by the test suite on every run</b>, with shape, not lightness, separating open cells from closed. Fully keyboard-playable; <code>?seed=</code> shares an exact board.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
+        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-flap">🐦 Duck Flap</a></h3>
+      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-flap/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
       <p>Every sprite and every sound generated at runtime — the project ships <b>no image or audio file at all</b>: parallax sky drawn on canvas, effects synthesised with WebAudio oscillators. Physics runs on a fixed 1/120s step so a 60Hz laptop and a 144Hz monitor behave alike, and the hitbox is smaller than the bird you see so a near miss reads as “just made it”. Three difficulties with separate record tables. 78 unit + 17 e2e tests.</p>
       <p>
         <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
@@ -232,81 +347,17 @@ Browser games, no server and no sign-in — each one static-exported and deploye
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-minesweeper">💣 Minesweeper</a></h3>
-      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-minesweeper/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
-      <p>The original rules kept exactly: the first click is always safe and always opens a region, chording explodes on a misplaced flag, and the mine counter goes negative rather than stopping at zero. The eight numerals run as a heat ramp and <b>every one clears 4.5:1 contrast in both themes — asserted by the test suite on every run</b>, with shape, not lightness, separating open cells from closed. Fully keyboard-playable; <code>?seed=</code> shares an exact board.</p>
+      <h3><a href="https://github.com/LeVanAnhDuc/web-game-duck-stomp">🦆 Duck Stomp</a></h3>
+      <img src="https://img.shields.io/badge/playable%20--%20placeholder%20art-D29922?style=flat-square&labelColor=282C34" height="20" alt="status" />
+      <a href="https://levananhduc.github.io/web-game-duck-stomp/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
+      <p>A pixel platformer played with <b>exactly two controls</b>, so a phone and a keyboard play the same game rather than one being a port of the other — there is no run button and no attack button, every ability rides on moving and jumping. Six hand-designed levels authored as ASCII maps by a script that <b>refuses to emit one whose pit is wider than the jump arc</b>. Gravity lives in the pure core rather than in Arcade Physics, which is what makes the whole vertical story testable. <i>Art is generated placeholder geometry until the CC0 sprite pack is wired in.</i></p>
       <p>
-        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
+        <img src="https://img.shields.io/badge/Phaser-282C34" height="22" alt="Phaser" />
         <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
-        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
+        <img src="https://img.shields.io/badge/Vite-282C34?logo=vite&logoColor=646CFF" height="22" alt="Vite" />
       </p>
     </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-gomoku">⭕ Caro Vô Hạn (Gomoku)</a></h3>
-      <img src="https://img.shields.io/badge/playable%20--%20AI%20is%20a%20stopgap-D29922?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-gomoku/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
-      <p>Vietnamese caro against the machine on a board with <b>no edges</b> — coordinates are integers and go negative, so “blocked” means an enemy mark and never a wall. Five or more wins unless both ends are blocked; there is no draw, because an unbounded board never runs out of cells. Drawn procedurally on canvas as pen strokes on graph paper, so shape carries the meaning and a greyscale screenshot still reads. 89 unit tests.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
-        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
-        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-sokoban">📦 Sokoban</a></h3>
-      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-sokoban/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
-      <p><b>No level in this game was drawn by hand.</b> A generator assembles each one, then a solver has to find the optimal solution before the level is allowed to exist — which is also where the number on the HUD comes from, so you always know how few pushes the level can be done in. The solver searches <i>push</i> space and collapses every player position inside one reachable region into a single state; without that collapse the same crate arrangement expands dozens of times and the search runs out of budget. Push a crate into a corner it can never leave and a strip offers the undo — a strip and not a dialog, because a dialog would cover the button you are reaching for.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
-        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
-        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-asteroids">🪨 Asteroids</a></h3>
-      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-asteroids/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
-      <p>The 1979 flight model kept whole — rotation, inertial thrust, friction and screen wrap on a fixed 1600×1200 world — with endless waves, two UFO types from wave 3, and five power-ups where the three weapons share one slot. The rules are pure functions behind a single <code>step(state, input, dt)</code> at a fixed 60 steps per second, and <b>an ESLint override forbids the engine from reaching <code>Math.random</code>, <code>Date.now</code> or <code>window</code></b>: one stray call silently ends determinism and resurfaces months later as a flaky test. Real hold-to-act touch controls, not a keyboard emulator. 151 unit tests.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
-        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
-        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-match-3">💎 Match 3</a></h3>
-      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-match-3/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
-      <p>Six levels that teach the rules in order, with special pieces earned by <i>how</i> you matched: four in a row clears a line, an L or T spawns a 3×3 bomb, five spawns a colour bomb. One player move goes through one pure function that returns the settled board plus an ordered list of events, and the UI only replays them — a boundary <b>enforced by a test that greps the engine source</b> rather than by convention, plus one that plays 4320 pseudo-random moves and asserts the replay reproduces the engine's own session exactly. Deadlock reshuffles for free, fully keyboard playable, and every colour also carries a shape. 517 tests.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
-        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
-        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/LeVanAnhDuc/web-game-solitaire">🃏 Klondike Solitaire</a></h3>
-      <img src="https://img.shields.io/badge/working-3FB950?style=flat-square&labelColor=282C34" height="20" alt="status" />
-      <a href="https://levananhduc.github.io/web-game-solitaire/"><img src="https://img.shields.io/badge/Play-1F6FEB?style=flat-square&logo=githubpages&logoColor=white&labelColor=282C34" height="20" alt="Play" /></a>
-      <p>Klondike with a draw-1 / draw-3 toggle, unlimited undo back to the first move, and a board that animates — cards fly between piles and a new game deals out from the deck. <b>A game is stored as a seed plus the list of moves played</b>, and the current position is that list replayed from the deal, which is what makes undo, restart and deterministic tests the same mechanism; <code>?van=&lt;number&gt;</code> reopens a deal you liked. Tapping, dragging and the keyboard are all first-class — none of them is the poor relation. 246 tests.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=FFFFFF" height="22" alt="Next.js" />
-        <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" height="22" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" height="22" alt="React" />
-        <img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwindcss&logoColor=06B6D4" height="22" alt="Tailwind CSS" />
-      </p>
-    </td>
+    <td></td>
   </tr>
 </table>
 
